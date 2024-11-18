@@ -14,3 +14,48 @@
 }
 2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
 2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 22:25:02,003 p=2305 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found
+localhost was 127.0.0.1
+
+2024-11-18 22:25:02,432 p=2305 u=vagrant n=ansible | PLAY [all] *********************************************************************
+2024-11-18 22:25:02,456 p=2305 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2024-11-18 22:25:02,622 p=2305 u=vagrant n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nvagrant@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-18 22:25:04,533 p=2305 u=vagrant n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-18 22:25:04,533 p=2305 u=vagrant n=ansible | ok: [localhost]
+2024-11-18 22:25:04,540 p=2305 u=vagrant n=ansible | TASK [include_role : 2do_parcial] **********************************************
+2024-11-18 22:25:04,561 p=2305 u=vagrant n=ansible | included: 2do_parcial for localhost
+2024-11-18 22:25:04,573 p=2305 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2024-11-18 22:25:04,587 p=2305 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-18 22:25:04,589 p=2305 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2024-11-18 22:25:04,589 p=2305 u=vagrant n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 22:25:04,589 p=2305 u=vagrant n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 22:27:51,521 p=2420 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found
+localhost was 127.0.0.1
+
+2024-11-18 22:27:51,657 p=2420 u=vagrant n=ansible | PLAY [Realizar tareas del parcial] *********************************************
+2024-11-18 22:27:51,665 p=2420 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2024-11-18 22:27:52,085 p=2420 u=vagrant n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nvagrant@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-18 22:27:53,448 p=2420 u=vagrant n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-18 22:27:53,449 p=2420 u=vagrant n=ansible | ok: [localhost]
+2024-11-18 22:27:53,456 p=2420 u=vagrant n=ansible | TASK [Crear estructura de directorios] *****************************************
+2024-11-18 22:27:53,831 p=2420 u=vagrant n=ansible | changed: [localhost]
+2024-11-18 22:27:53,840 p=2420 u=vagrant n=ansible | TASK [Crear subdirectorio para equipo] *****************************************
+2024-11-18 22:27:54,090 p=2420 u=vagrant n=ansible | changed: [localhost]
+2024-11-18 22:27:54,098 p=2420 u=vagrant n=ansible | TASK [Generar archivo de datos del alumno] *************************************
+2024-11-18 22:27:54,155 p=2420 u=vagrant n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-11-18 22:27:54,157 p=2420 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find or access 'datos_alumno.j2'\nSearched in:\n\t/home/vagrant/repogit/UTNFRA_SO_2do_Parcial_Villan/202406/ansible/templates/datos_alumno.j2\n\t/home/vagrant/repogit/UTNFRA_SO_2do_Parcial_Villan/202406/ansible/datos_alumno.j2\n\t/home/vagrant/repogit/UTNFRA_SO_2do_Parcial_Villan/202406/ansible/templates/datos_alumno.j2\n\t/home/vagrant/repogit/UTNFRA_SO_2do_Parcial_Villan/202406/ansible/datos_alumno.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-11-18 22:27:54,160 p=2420 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2024-11-18 22:27:54,161 p=2420 u=vagrant n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 22:27:54,161 p=2420 u=vagrant n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
