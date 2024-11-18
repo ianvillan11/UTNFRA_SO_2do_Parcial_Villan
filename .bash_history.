@@ -1,0 +1,755 @@
+1  ls
+    2  sudo whoami
+    3  sudo apt update
+    4  sudo apt install -y software-properties-common
+    5  sudo add-apt-repository --yes --update ppa:ansible/ansible
+    6  sudo apt install -y ansible
+    7  ./UTN-FRA_SO_Examenes/202406/script_Precondicion.sh
+    8  source ~/.bashrc
+    9  ls
+   10  mkdir repogit
+   11  git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+   12  git clone https://github.com/ianvillan11/UTNFRA_SO_2do_Parcial_Villan.git
+   13  ls
+   14  mv [opcione] UTN-FRA_SO_Examenes repogit
+   15  mv [opcions] UTN-FRA_SO_Examenes repogit
+   16  ls
+   17  cd repogit
+   18  ls
+   19  cd ..
+   20  ls
+   21  vm [opciones] UTNFRA_SO_2do_Parcial_Villan repogit
+   22  ls
+   23  mv [opciones] UTNFRA_SO_2do_Parcial_Villan repogit
+   24  ls
+   25  cd repogit
+   26  ls
+   27  cd UTN-FRA_SO_Examenes/
+   28  ls
+   29  cd 202406
+   30  script_Precondicion.sh
+   31  .script_Precondicion.sh
+   32  source ~/.bashrc
+   33  ls
+   34  cd
+   35  ls
+   36  cd repogit
+   37  ls
+   38  cd UTNFRA_SO_2do_Parcial_Villan/
+   39  ls
+   40  cd
+   41  ls
+   42  cd repogit
+   43  ls
+   44  UTN-FRA_SO_Examenes/
+   45  ls
+   46  UTN-FRA_SO_Examenes/
+   47  ls
+   48  cd UTN-FRA_SO_Examenes/
+   49  ls
+   50  cd 202406
+   51  ls
+   52  cd ..
+   53  cd
+   54  ./UTN-FRA_SO_Examenes/202406/script_Precondicion.sh
+   55  cd repogit
+   56  ./UTN-FRA_SO_Examenes/202406/script_Precondicion.sh
+   57  source  ~/.bashrc  && history -a
+   58  ls
+   59  UTNFRA_SO_2do_Parcial_Villan/
+   60  cd UTNFRA_SO_2do_Parcial_Villan/
+   61  ls
+   62  ./UTN-FRA_SO_Examenes/202406/script_Precondicion.sh
+   63  source ~/.bashrc
+   64  ls
+   65  cd
+   66  ls
+   67  cd repogit
+   68  ls
+   69  UTNFRA_SO_2do_Parcial_Villan/
+   70  ls
+   71  cd UTNFRA_SO_2do_Parcial_Villan/
+   72  ls
+   73  cd
+   74  ls
+   75  vm [opciones] RTA_Examen_20241118 repogit
+   76  ls
+   77  mv [opciones]
+   78  mv [opciones] RTA_Examen_20241118 repogit
+   79  ls
+   80  cd repogit
+   81  ls
+   82  vm [opciones] UTNFRA_SO_2do_Parcial_Villan RTA_Examen_20241118/
+   83  ls
+   84  mv [opciones] UTNFRA_SO_2do_Parcial_Villan RTA_Examen_20241118/
+   85  ls
+   86  cd RTA_Examen_20241118/
+   87  ls
+   88  mv [opciones] UTNFRA_SO_2do_Parcial_Villan repogit
+   89  ls
+   90  mv ~/repogit/RTA_Examen_20241118/UTNFRA_SO_2do_Parcial_Villan ~/repogit/
+   91  ls
+   92  cd
+   93  ls
+   94  cd repogit
+   95  ls
+   96  mv ~/repogit/RTA_Examen_20241118 ~/repogit/UTNFRA_SO_2do_Parcial_Villan/
+   97  ls
+   98  cd UTNFRA_SO_2do_Parcial_Villan/
+   99  ls
+  100  cd
+  101  ls
+  102  cd repogit
+  103  ls
+  104  cd UTN-FRA_SO_Examenes/
+  105  ls
+  106  mv ~/repogit/UTN-FRA_SO_Examenes/202406 ~/repogit/UTNFRA_SO_2do_Parcial_Villan/
+  107  ls
+  108  cd
+  109  ls
+  110  cd repogit
+  111  ls
+  112  cd UTNFRA_SO_2do_Parcial_Villan/
+  113  ls
+  114  git commit -m "agregada las carpetas "
+  115  git add .
+  116  git commit -m"a"
+  117  git config --global user.email "ianvillan4@gmail.com"
+  118  git config --global user.name "ianvillan11"
+  119  git add .
+  120  git commit -m"a"
+  121  git push
+  122  ssh-keygen -t rsa -b 4096 -C "ianvillan4@gmail.com"
+  123  eval "$(ssh-agent -s)"
+  124  ssh-add ~/.ssh/id_rsa
+  125  cat ~/.ssh/id_rsa.pub
+  126  git add .
+  127  git commit -m"agregadas las carpetas necesarias para la resolucion del parcial"
+  128  git push
+  129  git remote set-url origin git@github.com:ianvillan11/UTNFRA_SO_2do_Parcial_Villan.git
+  130  git add .
+  131  git commit -m "añadidas las carpetas necesarias para la resolucion del parcial"
+  132  git push
+  133  sudo apt update
+  134  sudo apt install -y software-properties-common
+  135  sudo add-apt-repository --yes --update ppa:ansible/ansible
+  136  sudo apt install -y ansible
+  137  sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+  138  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  139  sudo apt install -y docker-ce docker-ce-cli containerd.io
+  140  docker --version
+  141  sudo usermod -aG docker tu_usuario
+  142  sudo usermod -aG docker villanian
+  143  sudo usermod -a -G docker $(whoami)
+  144  sudo apt-get install ca-certificates curl
+  145  sudo install -m 0755 -d /etc/apt/keyrings
+  146  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+  147  ls
+  148  cd repogit
+  149  ls
+  150  cd UTNFRA_SO_2do_Parcial_Villan/
+  151  ls
+  152  sudo chmod a+r /etc/apt/keyrings/docker.asc
+  153  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  154    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  155  sudo apt-get update
+  156  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  157  sudo docker run hello-world
+  158  sudo usermod -a -G docker [usuario]
+  159  sudo usermod -a -G docker $(whoami)
+  160  grep docker /etc/group
+  161  sudo usermod -a -G docker vagrant
+  162  grep docker /etc/group
+  163  id
+  164  exit
+  165  su vagrant
+  166  id
+  167  exit
+  168  sudo su - vagrant
+  169  id
+  170  exit
+  171  id
+  172  docker ps
+  173  cd repogit
+  174  ls
+  175  cd UTNFRA_SO_2do_Parcial_Villan/
+  176  ls
+  177  cd RTA_Examen_20241118/
+  178  ls
+  179  sudo usermod -aG docker tu_usuario
+  180  sudo usermod -aG docker ianvillan11
+  181  cat Punto_A.sh
+  182  lbslk
+  183  lsblk
+  184  cd
+  185  cd repogit
+  186  ls
+  187  cd UTNFRA_SO_2do_Parcial_Villan/
+  188  ls
+  189  cd RTA_Examen_20241118/
+  190  ls
+  191  vim Punto_A.sh
+  192  sudo pvs
+  193  sudo vgs
+  194  sudo lvs
+  195  df -h
+  196  chmod +x Punto_A.sh
+  197  ./Punto_A.sh
+  198  lsblk
+  199  sudo systemctl restart docker
+  200  sudo systemctl status docker
+  201  vim Punto_A.sh
+  202  vim Punto_A.sh
+  203  ./Punto_A.sh
+  204  lsblk
+  205  vim ./Punto_A.sh
+  206  lsblk
+  207  sudo vgcreate vg_temp /dev/sdd
+  208  sudo lvcreate -L 512M -n lv_swap vg_temp
+  209  sudo mkswap /dev/vg_temp/lv_swap
+  210  cd repogit
+  211  cd UTNFRA_SO_2do_Parcial_Villan/
+  212  ls
+  213  cd RTA_Examen_20241118/
+  214  ls
+  215  ./Punto_A.sh
+  216  lsblk
+  217  vim ./Punto_A.sh
+  218  lsblk
+  219  ./Punto_A.sh
+  220  lsblk
+  221  sudo lvdisplay /dev/vg_temp/lv_swap
+  222  sudo mkswap /dev/vg_temp/lv_swap
+  223  sudo swapon /dev/vg_temp/lv_swap
+  224  swapon -s
+  225  cat /etc/fstab
+  226  sudo nano /etc/fstab
+  227  sudo lvdisplay /dev/vg_temp/lv_swap
+  228  sudo lvcreate -L 512M -n lv_swap vg_temp
+  229  sudo mkswap /dev/vg_temp/lv_swap
+  230  sudo swapon /dev/vg_temp/lv_swap
+  231  swapon -s
+  232  sudo reboot
+  233  ls
+  234  cd UTNFRA_SO_2do_Parcial_Villan/
+  235  ls
+  236  cd RTA_Examen_20241118/
+  237  ls
+  238  ./Punto_A.sh
+  239  lsblk
+  240  vim ./Punto_A.sh
+  241  swapon -s
+  242  sudo lsblk
+  243  sudo vgdisplay vg_datos
+  244  sudo swapon /dev/vg_temp/lv_swap
+  245  sudo lvdisplay
+  246  sudo vgdisplay vg_temp
+  247  sudo lvs
+  248  sudo vgdisplay vg_temp
+  249  sudo pvcreate /dev/sde
+  250  sudo vgcreate vg_temp /dev/sde
+  251  sudo fdisk -l
+  252  lsblk
+  253  vim ./Punto_A.sh
+  254  ./Punto_A.sh
+  255  lsblk
+  256  vim Punto_A.sh
+  257  lsbl
+  258  cd repogit
+  259  cd UTNFRA_SO_2do_Parcial_Villan/
+  260  ls
+  261  cd RTA_Examen_20241118/
+  262  ls
+  263  ./Punto_A.sh
+  264  lbslk
+  265  lsblk
+  266  vim Punto_A.sh
+  267  sudo vgremove vg_temp
+  268  sudo pvremove /dev/sdd
+  269  sudo pvcreate /dev/sdd
+  270  sudo vgcreate vg_temp /dev/sdd
+  271  sudo lvcreate -L 512M -n lv_swap vg_temp
+  272  lsblk
+  273  vim Punto_Á
+  274  ls
+  275  vim Punto_A.sh
+  276  ./Punto_A.sh
+  277  lsblk
+  278  vim Punto_A.sh
+  279  vim Punto_A.sh
+  280  ./Punto_A.sh
+  281  lsblk
+  282  cd repogit
+  283  ls
+  284  cd UTNFRA_SO_2do_Parcial_Villan/
+  285  cd RTA_Examen_20241118/
+  286  ls
+  287  vim Punto_A.sh
+  288  lsblk
+  289  ./Punto_A.sh
+  290  lsblk
+  291  sudo mount -a
+  292  ./Punto_A.sh
+  293  lsblk
+  294  sudo swapon --show
+  295  cat /etc/fstab
+  296  sudo nano /etc/fstab
+  297  ls
+  298  cd repogit
+  299  ls
+  300  cd UTNFRA_SO_2do_Parcial_Villan/
+  301  ls
+  302  cd RTA_Examen_20241118/
+  303  LS
+  304  ls
+  305  sudo nano /etc/fstab
+  306  ./Punto_A.sh
+  307  lsblk
+  308  sudo nano /etc/fstab
+  309  lsblk
+  310  sudo swapon /dev/vg_temp/lv_swap
+  311  cd repogit
+  312  ls
+  313  cd UTNFRA_SO_2do_Parcial_Villan/
+  314  ls
+  315  cd RTA_Examen_20241118/
+  316  ls
+  317  vim Punto_B.sh
+  318  ./Punto_B.sh
+  319  ls
+  320  vim Punto_B.sh
+  321  ./Punto_B.sh
+  322  chmod x+ Punto_B.sh
+  323  chmod +x Punto_B.sh
+  324  ./Punto_B.sh
+  325  sudo ./Punto_B.sh
+  326  ls
+  327  cd Lista_Usuarios.txt
+  328  ls
+  329  cd Lista_Usuarios.txt
+  330  getent group grupo1 grupo2 grupo3
+  331  cat Lista_Usuarios.txt
+  332  vim Punto_B.sh
+  333  ls
+  334  cd repogit
+  335  cd UTNFRA_SO_2do_Parcial_Villan/
+  336  ls
+  337  cd RTA_Examen_20241118/
+  338  ls
+  339  cat Lista_Usuarios.txt
+  340  nano Lista_Usuarios.txt
+  341  cat Lista_Usuarios.txt
+  342  git add .
+  343  git commit -m "Punto a casi terminado,y punto b terminado"
+  344  git push
+  345  cd ..
+  346  ls
+  347  cd 202406
+  348  ls
+  349  cd docker/
+  350  ls
+  351  nano index.html
+  352  git add .
+  353  git commit -m "cambiado los datos del index.html"
+  354  git puush
+  355  git push
+  356  ls
+  357  cd
+  358  ls
+  359  cd repogit
+  360  ls
+  361  cd UTNFRA_SO_2do_Parcial_Villan/
+  362  ls
+  363  cd 202406/
+  364  ls
+  365  cd docker
+  366  ls
+  367  touch Dockerfile
+  368  nano Dockerfile
+  369  ls
+  370  docker build -t web1-Villan
+  371  docker build -t web1-Villan .
+  372  cat Dockerfile
+  373  docker login
+  374  ls
+  375  cd repogit
+  376  cd UTNFRA_SO_2do_Parcial_Villan/
+  377  ls
+  378  cd 202406/
+  379  ls
+  380  cd docker/
+  381  ls
+  382  docker login
+  383  ls
+  384  docker tag web-villan ianvillan11/web1-villan
+  385  docker images
+  386  ls
+  387  cat Dockerfile
+  388  docker build -t web1-villan .
+  389  df -h
+  390  docker container prune -f
+  391  docker image prune -a -f
+  392  docker volume prune -f
+  393  docker network prune -f
+  394  du -sh /var/lib/docker
+  395  config.vm.disk :disk, size: "10GB" , primary: true
+  396  docker build -t web1-villan .
+  397  cd repogit
+  398  cd UTNFRA_SO_2do_Parcial_Villan/
+  399  ls
+  400  cd 20
+  401  cd 202406/
+  402  ls
+  403  cd docker/
+  404  ls
+  405  docker build -t web1-villan .
+  406  ls
+  407  cd ..
+  408  cd
+  409  ls
+  410  cd repogit
+  411  ls
+  412  cd repogit
+  413  cd UTNFRA_SO_2do_Parcial_Villan/
+  414  ls
+  415  cd RTA_Examen_20241118/
+  416  ls
+  417  cd ..
+  418  ls
+  419  cd 202406/
+  420  cd docker/
+  421  ls
+  422  docker build -t web1-villan .
+  423  cd ..
+  424  ls
+  425  cd ..
+  426  ls
+  427  cd RTA_Examen_20241118/
+  428  ls
+  429  vim Punto_C.sh
+  430  df -h
+  431  docker system prune -a -f
+  432  docker volume prune -f
+  433  docker container prune -f
+  434  lbslk
+  435  lblsk
+  436  lbslk
+  437  fdisk
+  438  lsblk
+  439  ls
+  440  vim Punto_A.sh
+  441  lsblk
+  442  ./Punto_A.sh
+  443  lsblk
+  444  sudo systemctl start docker
+  445  vagrant reboot
+  446  nano reboot
+  447  sudo systemctl stop docker
+  448  ls
+  449  cd ..
+  450  ls
+  451  cd 202406/
+  452  ls
+  453  cd docker/
+  454  ls
+  455  sudo systemctl start docker
+  456  cat Dockerfile
+  457  docker build -t web1-villan .
+  458  cd ..
+  459  ls
+  460  cd ..
+  461  ls
+  462  cd RTA_Examen_20241118/
+  463  ls
+  464  vim Punto_A.sh
+  465  lsblk
+  466  vim Punto_A
+  467  ls
+  468  vim Punto_A.sh
+  469  ./Punto_A.sh
+  470  lsblk
+  471  vim Punto_A.sh
+  472  ./Punto_A.sh
+  473  lsblk
+  474  sudo reboot
+  475  sudo vgs
+  476  lsblk
+  477  cd repogit
+  478  cd UTNFRA_SO_2do_Parcial_Villan/
+  479  ls
+  480  cd RTA_Examen_20241118/
+  481  sudo ./Punto_A.s
+  482  sudo ./Punto_A.sh
+  483  lsblk
+  484  ls
+  485  vim Punto_D.sh
+  486  chmod +x Punto_D.sh
+  487  ls
+  488  ./Punto_D.sh
+  489  ls -l /tmp/2do_parcial
+  490  cat /tmp/2do_parcial/alumno/datos_alumno.txt
+  491  vim Punto_D.sh
+  492  cat /tmp/2do_parcial/alumno/datos_alumno.txt
+  493  ./Punto_D.sh
+  494  ls
+  495  cat /tmp/2do_parcial/alumno/datos_alumno.txt
+  496  cat /tmp/2do_parcial/equipo/datos_equipo.txt
+  497  sudo visudo -c
+  498  sudo -l -U vagrant
+  499  getent group 2PSupervisores
+  500  vim Punto_D.sh
+  501  ./Punto_D.sh
+  502  getent group 2PSupervisores
+  503  git add .
+  504  ls
+  505  cd ..
+  506  ls
+  507  cd 202406/
+  508  ls
+  509  cd ansible/
+  510  ls
+  511  cd roles/
+  512  ls
+  513  cd 2do_parcial/
+  514  ls
+  515  cd ..
+  516  ls
+  517  cd ..
+  518  ls
+  519  cd ..
+  520  ls
+  521  cd ..
+  522  ls
+  523  cd RTA_Examen_20241118/
+  524  ls
+  525  cd ..
+  526  ls
+  527  cd 202406/
+  528  cd ansible/
+  529  ls
+  530  sudo apt install tree
+  531  tree
+  532  ls
+  533  cd roles
+  534  ls
+  535  cd 2do_parcial/
+  536  ls
+  537  mkdir template
+  538  ls
+  539  cd template
+  540  ls
+  541  cd ..
+  542  ls
+  543  cd task
+  544  cd tasks/
+  545  ls
+  546  vim roles/2do_parcial/tasks/main.yml
+  547  ls
+  548  vim main.yml
+  549  cd ..
+  550  ls
+  551  cdf ..
+  552  cd ..
+  553  ls
+  554  cd ansible/
+  555  ls
+  556  cd roles/
+  557  ls
+  558  mkdir tmp
+  559  ls
+  560  mv [opciones] 2do_parcial tmp
+  561  ls
+  562  cd tmp/
+  563  cd ..
+  564  ls
+  565  cd ..
+  566  ls
+  567  mv [opciones] tmp ansible
+  568  ls
+  569  cd roles/
+  570  ls
+  571  cd tmp/
+  572  mv tmp ../
+  573  cd ..
+  574  mv tmp ../
+  575  ls
+  576  cd ..
+  577  ls
+  578  cd tmp/
+  579  ls
+  580  2do_parcial/
+  581  LS
+  582  cd 2do_parcial/
+  583  ls
+  584  cd template
+  585  ls
+  586  ls -l
+  587  cd ..
+  588  ls
+  589  ls -l
+  590  cd ..
+  591  ls
+  592  ls -l
+  593  cd ..
+  594  ls
+  595  cd roles/
+  596  ls
+  597  ls -l
+  598  cat playbook.yml
+  599  ls
+  600  cd ..
+  601  ls
+  602  cd ..
+  603  ls
+  604  cd RTA_Examen_20241118/
+  605  ls -l
+  606  ./Punto_D.sh
+  607  ls -l
+  608  cat datos_equipo.txt
+  609  vim Punto_D.sh
+  610  ls
+  611  cd
+  612  ls
+  613  cd repogit
+  614  ls
+  615  cd UTNFRA_SO_2do_Parcial_Villan/
+  616  ls
+  617  cd 202406/
+  618  ls
+  619  cd docker/
+  620  ls
+  621  cd ..
+  622  cd ansible/
+  623  ls
+  624  cd tmp
+  625  LS
+  626  ls
+  627  cd 2do_parcial/
+  628  ls
+  629  cd template
+  630  ls
+  631  cd ..
+  632  ks
+  633  ls
+  634  cd RTA_Examen_20241118/
+  635  ls
+  636  vim Punto_D.sh
+  637  ls
+  638  ./Punto_D.sh
+  639  vim Punto_D.sh
+  640  ./Punto_D.sh
+  641  ls
+  642  cd ..
+  643  ls
+  644  cd 202406/
+  645  ls
+  646  cd ansible
+  647  ls
+  648  cd tmp/
+  649  ls
+  650  cd 2do_parcial/
+  651  ls
+  652  cd alumno
+  653  ls
+  654  cat datos_alumno.txt
+  655  git add .
+  656  cd ..
+  657  ls
+  658  cd ..
+  659  ls
+  660  cd tmp
+  661  ls
+  662  cd 2do_parcial/
+  663  ls
+  664  mv ~/repogit/UTNFRA_SO_2do_Parcial_Villan/202406/ansible/tmp/2do_parcial/{README.md,defaults,handlers,meta,tasks,template,tests,vars} ~/repogit/UTNFRA_SO_2do_Parcial_Villan/202406/ansible/tmp/roles/
+  665  ls
+  666  cd ..
+  667  ls
+  668  cd ..
+  669  mv ~/repogit/UTNFRA_SO_2do_Parcial_Villan/202406/ansible/tmp/2do_parcial/{README.md,defaults,handlers,meta,tasks,template,tests,vars} ~/repogit/UTNFRA_SO_2do_Parcial_Villan/202406/ansible/tmp/roles/
+  670  ls
+  671  cd tmp
+  672  mv ~/repogit/UTNFRA_SO_2do_Parcial_Villan/202406/ansible/tmp/2do_parcial/{README.md,defaults,handlers,meta,tasks,template,tests,vars} ~/repogit/UTNFRA_SO_2do_Parcial_Villan/202406/ansible/tmp/roles/
+  673  ls
+  674  cd 2do_parcial/
+  675  ls
+  676  mv 2do_parcial/{README.md,defaults,handlers,meta,tasks,template,tests,vars} roles/
+  677  ls
+  678  cd ..
+  679  ls
+  680  mv 2do_parcial/{README.md,defaults,handlers,meta,tasks,template,tests,vars} roles/
+  681  cd ..
+  682  ls
+  683  cd repogit
+  684  ls
+  685  cd UTNFRA_SO_2do_Parcial_Villan/
+  686  ls
+  687  cd 202406/
+  688  ls
+  689  cd ansible
+  690  ls
+  691  cd roles/
+  692  ls
+  693  cd ..
+  694  cd tmp
+  695  ls
+  696  cd 2do_parcial/
+  697  ls
+  698  mv 2do_parcial/README.md roles/
+  699  ls
+  700  cd ..
+  701  mv tmp/2do_parcial/{README.md,defaults,handlers,meta,tasks,template,tests,vars} roles/
+  702  ls
+  703  cd roles/
+  704  ls
+  705  cd ..
+  706  ls
+  707  cd tmp
+  708  ls
+  709  cd 2do_parcial/
+  710  ls
+  711  cd equipo/
+  712  ls
+  713  cat datos_equipo.txt
+  714  cd .
+  715  cd ..
+  716  ls
+  717  cd alumno/
+  718  ls
+  719  cat datos_alumno.txt
+  720  git add .
+  721  cd ..
+  722  ls
+  723  cd ..
+  724  ls
+  725  cd ..
+  726  ansible-playbook -i inventory playbook.yml
+  727  ls
+  728  cat playbook.yml
+  729  nano playbook.yml
+  730  ansible-playbook -i inventory/hosts playbook.yml
+  731  cd ..
+  732  ls
+  733  cd ansible
+  734  ls
+  735  nano playbook.yml
+  736  ls
+  737  git add .
+  738  git commit -m "agregado punto d pero de forma de script"
+  739  git push
+  740  cd ..
+  741  cd
+  742  history -a
+  743  /.bash_history
+  744  bash_history
+  745  ls
+  746  cd repogit
+  747  history
+  748  history -a
+  749  cat ~/.bash_history
+  750  ls
+  751  git add .
+  752  cd UTNFRA_SO_2do_Parcial_Villan/
+  753  ls
+  754  history
+
